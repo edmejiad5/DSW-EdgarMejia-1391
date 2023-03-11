@@ -1,31 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fase 2</title>
+    <style>
+        body{
+            
+        }
+        header{
+            background-color: aquamarine;
+        }
+    </style>
 </head>
-<style>
-    * {
-        text-align: center;
-        background-color: cornflowerblue;
-        color: white;
-    }
-</style>
+
 <body>
-    <h1>Bienvenido a mi sitio web</h1>
-    <h2> Proyecto de sitio web 2023-01 </h2>
-    <hr>
-    <h3>nombre: Edgar Dario Mejia Delgado</h3>
-    <h3>Programa: Ingenieria en sistemas</h3>
-    <h3>Santiago de Cali, 19 de Febrero de 2023</h3>
-    <hr>
-    <p> Mis datos de contacto son: <br>
-        skype: edmejiad5 <br>
-        telefono: 304 530 5242 (Whatsapp)  <br>
-        email:  edmejiad@unadvirtual.edu.co<br>
-    </p>
-    
+    <header>
+        <h1 align="center">APRENDIENDO SOBRE MEDIA QUERIES</h1><br><br>
+    </header>
+    <nav>
+        <!-- Es es la seccion del Menu de la pagina -->
+        <table border="0" width="100%" align="center">
+            <tr>
+                <td align="center">
+                    <ul>
+                        <li><a href="#inicio">Inicio </a></li>
+                    </ul>
+                </td>
+                <td align="center">
+                    <ul>
+                        <li><a href="#temaseleccionado">Tema seleccionado</a></li>
+                    </ul>
+                </td>
+                <td align="center">
+                    <ul>
+                        <li><a href="#mockup">Mockup </a></li>
+                    </ul>
+                </td>
+                <td align="center">
+                    <ul>
+                        <li><a href="#acercade">Acerca de </a></li>
+                    </ul>
+                </td>
+
+            </tr>
+
+        </table>
+
+
+    </nav><br><br><br><br>
+    <table border="0" width="80%" align="center">
+        <!-- Esta es la seccion de inicio de la pagina        -->
+        <tr>
+            <td>
+                <a name="inicio"></a>
+                <section>
+                    <center>
+                        <h2>Inicio</h2>
+                    </center>
+
+                    <p style="text-align: justify;">
+                        Acontinuacion se presenta trabajo practico del curso de diseños Web en donde pondemos evidenciar
+                        el conocimiento en el desarrollo y creacion de paginas web.
+
+                    </p>
+                </section>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <!-- Esta es la seccion dek tema seleccionado         -->
+        <tr>
+            <td>
+                <a name="temaseleccionado"></a>
+                <section>
+                    <center>
+                        <h2>Tema seleccionado</h2><br>
+                    </center>
+                    <h3>¿Que son las media queries?</h3>
+                    <p style="text-align: justify;">
+                        Son consultas sobre las características del medio donde se está visualizando una web. Permiten
+                        establecer estilos condicionales, que solo se aplicaran en caso de cumplan una condición de
+                        manera satisfactoria.<br>
+                    </p>
+                    <p style="text-align: justify;">
+                        Con este método, especificamos que queremos aplicar los estilos CSS para tipos de medios
+                        concretos (screen: sólo en pantallas, en este caso) que cumplan las condiciones especificadas
+                        entre paréntesis. De esta forma, una estrategia aconsejable es crear reglas CSS generales
+                        aplicadas a todo el documento: colores, tipo de fuente, etc. y luego, las particularidades que
+                        se aplicarían sólo en el dispositivo en cuestión. <br>
+                    </p>
+                    <p style="text-align: justify;">
+                        también se pueden indicar reglas @media negadas mediante la palabra clave not, que aplicará CSS
+                        siempre y cuando no se cumpla una determinada condición.
+                    </p>
+                </section>
+            </td>
+
+            <td>
+                <img src="../DSW-EdgarMejia-1391/imagenes/img1.JPG" height="200" width="500"
+                    alt="Aplicacion de las media queries">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <section>
+                    <h3>Tipos de Medios</h3>
+                    <p style="text-align: justify;">
+                        En la imagen de la columna de la derecha se encuentra una grafica en donde describe algunos de
+                        los tipos de medios
+                        utilizados como son el screnn, print, speetch entre otros.<br>
+                    </p>
+                    <p style="text-align: justify;">
+                        Con el siguiente fragmento de código HTML estamos indicando que el nuevo ancho de la pantalla es
+                        el ancho del dispositivo, por lo que el aspecto del viewport se va a adaptar consecuentemente:
+                        <br><br>
+
+                        <img src="../DSW-EdgarMejia-1391/imagenes/img3.JPG" height="30" width="500"
+                            alt="Aplicacion de las media queries"> <br><br>
+
+                        <img src="../DSW-EdgarMejia-1391/imagenes/img4.JPG" height="200" width="500"
+                            alt="Aplicacion de las media queries">
+                    </p>
+
+                </section>
+            </td>
+            <td height="40" valign="top">
+                <img src="../DSW-EdgarMejia-1391/imagenes/img2.JPG" height="300" width="500"
+                    alt="Aplicacion de las media queries">
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                <h3>Ejemplos de media queries</h3>
+                <p style="text-align: justify;">
+                    En la imagen de la columna de la derecha se encuentra una grafica en donde intepreta la definicion
+                    de difrentes estilos dependiendo del dispositivo tecnologico que estemos utilizando.
+                    <br><br>
+                    En el anterior ejemplo se muestra un elemento (con clase menú) con un color de fondo concreto,
+                    dependiendo del tipo de medio o dispositivo que se visualice la página:
+
+                <ul>
+                    <li>Azul para resoluciones menores a 640 píxeles de ancho (móviles).</li><br>
+                    <li>Rojo para resoluciones entre 640 píxeles y 1280 píxeles de ancho (tablets).</li><br>
+                    <li>Verde para resoluciones mayores a 1280 píxeles (desktop).</li><br>
+
+                </ul>
+                </p>
+            </td>
+            <td>
+
+                <img src="../DSW-EdgarMejia-1391/imagenes/img5.JPG" height="200" width="500"
+                    alt="Aplicacion de las media queries">
+            </td>
+        </tr>
+
+        <tr>
+            <td height="40" valign="top">
+                <hr>
+                <a name="mockup"></a>
+                <section>
+                    <center>
+                        <h2>Mockup</h2>
+                    </center>
+                    <p style="text-align: justify;">
+                        Se definie como bosquejo o un diseño previo que se hace antes de realizar un desarrollo sea
+                        diseño web o programacion. <br>
+                    </p>
+                </section>
+            </td>
+            <td>
+                <hr>
+                <img src="../DSW-EdgarMejia-1391/imagenes/mockup.jpg" height="800" width="500"
+                    alt="Aplicacion de las media queries"><br><br>
+
+            </td>
+
+        </tr>
+        <!-- Esta es la seccion de Acerca de -->
+        <tr>
+            <td height="40" valign="top">
+                <hr>
+                <a name="acercade"></a>
+                <section>
+                    <center>
+                        <h2>Acerca de</h2>
+                    </center>
+
+                    <h3>Nombre: Edgar Dario Mejia Delgado</h3>
+                    <h3>Programa: Ingenieria en sistemas</h3>
+                    <h3>Santiago de Cali, 11 de Marzo de 2023</h3>
+                    <hr>
+                    <p> Mis datos de contacto son: <br>
+                        skype: edmejiad5 <br>
+                        telefono: 304 530 5242 (Whatsapp) <br>
+                        email: edmejiad@unadvirtual.edu.co<br>
+                    </p>
+
+                </section>
+
+            </td>
+            <td>
+                <hr>
+                <center>
+                    <img src="../DSW-EdgarMejia-1391/imagenes/Acercade.png" height="300" width="200"
+                        alt="Aplicacion de las media queries">
+                </center>
+            </td>
+        </tr>
+    </table>
+    <!-- Esta es la seccion de pie de pagina -->
+    <footer>
+        <center>
+            <p>
+                Esta pagina fue desarrollada por Edgar Mejia, estudiante de la UNAD de la Carrera Ing en sistemas
+            </p>
+            <p>
+                Fecha de Actualizacion: Santiago de Cali, Sabado 11 de marzo de 2023
+            </p>
+            <p>
+                Derechos reservados para el autor del sitio protegido contra Copyright.
+            </p>
+        </center>
+    </footer>
 </body>
+
+
 </html>
