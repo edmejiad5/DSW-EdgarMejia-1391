@@ -9,35 +9,45 @@
 
 header {
     grid-area: A;
-    background-color: #00235B;
+    background-color: #F6F1F1;
 }
 
 nav {
     grid-area: B;
-    background-color: #E21818;
+    background-color: #F6F1F1;
 
 }
 
 aside {
     grid-area: C;
-    background-color: #FFDD83;
+    background-color: #F6F1F1;
 }
 
 main {
     grid-area: D;
-    background-color: #00235B;
+    background-color: #19A7CE;
 }
 
 footer {
     grid-area: E;
-    background-color: #98DFD6;
+    background-color: #146C94;
 
 }
 
 .centrado {
     text-align: center;
+    font-family: 'Franklin Gothic Medium';
 }
 
+.subtitulo {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+
+}
+.parrafo {
+    text-align: justify;
+    font-family:  Arial, sans-serif;
+}
 /*Menu*/
 .menu_horizontal{
     display: flex;
@@ -56,6 +66,7 @@ footer {
 
 .menu_aside{
     list-style: none;
+    justify-content: center;
 }
 
 .menu_aside a{
@@ -63,8 +74,9 @@ footer {
     text-decoration: none;
     padding: 10px 40px;
     margin: 4px;
-    background-color: blue;
+    background-color: black;
     color: white;
     display: block;
+
 
 }
