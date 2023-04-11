@@ -1,0 +1,70 @@
+.contenedor{
+    display: grid;
+    grid-template-areas:
+        ' A A A A'
+        ' B B B B'
+        ' C D D D'
+        ' E E E E';
+}
+
+header {
+    grid-area: A;
+    background-color: #00235B;
+}
+
+nav {
+    grid-area: B;
+    background-color: #E21818;
+
+}
+
+aside {
+    grid-area: C;
+    background-color: #FFDD83;
+}
+
+main {
+    grid-area: D;
+    background-color: #00235B;
+}
+
+footer {
+    grid-area: E;
+    background-color: #98DFD6;
+
+}
+
+.centrado {
+    text-align: center;
+}
+
+/*Menu*/
+.menu_horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu_horizontal a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 4px;
+}
+
+.menu_aside{
+    list-style: none;
+}
+
+.menu_aside a{
+    
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 4px;
+    background-color: blue;
+    color: white;
+    display: block;
+
+}
