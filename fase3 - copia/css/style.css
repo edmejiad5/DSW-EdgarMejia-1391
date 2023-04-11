@@ -1,0 +1,82 @@
+.contenedor{
+    display: grid;
+    grid-template-areas:
+        ' A A A A'
+        ' B B B B'
+        ' C D D D'
+        ' E E E E';
+}
+
+header {
+    grid-area: A;
+    background-color: #F6F1F1;
+}
+
+nav {
+    grid-area: B;
+    background-color: #F6F1F1;
+
+}
+
+aside {
+    grid-area: C;
+    background-color: #F6F1F1;
+}
+
+main {
+    grid-area: D;
+    background-color: #19A7CE;
+}
+
+footer {
+    grid-area: E;
+    background-color: #146C94;
+
+}
+
+.centrado {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.subtitulo {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+
+}
+.parrafo {
+    text-align: justify;
+    font-family:  Arial, sans-serif;
+}
+/*Menu*/
+.menu_horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu_horizontal a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 4px;
+}
+
+.menu_aside{
+    list-style: none;
+    justify-content: center;
+}
+
+.menu_aside a{
+    
+    text-decoration: none;
+    padding: 10px 40px;
+    margin: 4px;
+    background-color: black;
+    color: white;
+    display: block;
+
+
+}
